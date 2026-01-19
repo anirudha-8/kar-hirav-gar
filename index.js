@@ -50,8 +50,8 @@ const makeCommits = (n) => {
 	if (n === 0) return simpleGit().push();
 
 	// Generate random date within the desired range
-	const startDate = moment("2024-12-30"); // Start date (year-month-date)
-	const endDate = moment("2024-12-31"); // End date
+	const startDate = moment("2025-01-03"); // Start date (year-month-date)
+	const endDate = moment("2025-01-04"); // End date (excluded)
 	const randomDate = moment(
 		startDate.valueOf() +
 			Math.random() * (endDate.valueOf() - startDate.valueOf()),
